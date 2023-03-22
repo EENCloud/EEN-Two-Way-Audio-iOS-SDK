@@ -1,0 +1,129 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name EEN_Two_Way_Audio_iOS_SDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import SocketRocket
+import Swift
+import WebRTC
+import _Concurrency
+import _StringProcessing
+import os.log
+import os
+public enum Logger {
+  public static func log(_ message: Swift.String)
+  public static func logWarning(_ warning: Swift.String)
+  public static func logError(_ error: Swift.String)
+  public static func logError(_ error: Swift.Error)
+}
+public protocol WebSocketProvider : AnyObject {
+  var delegate: EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate? { get set }
+  func connect()
+  func send(data: Foundation.Data)
+  func disconnect()
+}
+public protocol WebSocketProviderDelegate : AnyObject {
+  func webSocketDidConnect(_ webSocket: EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider)
+  func webSocketDidDisconnect(_ webSocket: EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider)
+  func webSocket(_ webSocket: EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider, didReceiveResponse text: Swift.String)
+}
+public class TwoWayAudioClient {
+  public init(with model: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioModel, delegate: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioClientDelegate?)
+  @objc deinit
+  public func getStatus() -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus
+  public func connect()
+  public func disconnect()
+  public func setMuteAudio(isMuted: Swift.Bool)
+}
+@objc public class WebRTCSocket : ObjectiveC.NSObject, EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider {
+  public var delegate: EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate?
+  public init(url: Foundation.URL, authKey: Swift.String)
+  public func connect()
+  public func disconnect()
+  public func send(data: Foundation.Data)
+  @objc deinit
+}
+extension EEN_Two_Way_Audio_iOS_SDK.WebRTCSocket : SocketRocket.SRWebSocketDelegate {
+  @objc dynamic public func webSocket(_ webSocket: SocketRocket.SRWebSocket!, didReceiveMessage message: Any!)
+  @objc dynamic public func webSocketDidOpen(_ webSocket: SocketRocket.SRWebSocket!)
+  @objc dynamic public func webSocket(_ webSocket: SocketRocket.SRWebSocket!, didFailWithError error: Swift.Error!)
+  @objc dynamic public func webSocket(_ webSocket: SocketRocket.SRWebSocket!, didCloseWithCode code: Swift.Int, reason: Swift.String!, wasClean: Swift.Bool)
+}
+@objc @_inheritsConvenienceInitializers public class WebRTCClient : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension EEN_Two_Way_Audio_iOS_SDK.WebRTCClient : WebRTC.RTCPeerConnectionDelegate {
+  @objc dynamic public func peerConnection(_ peerConnection: WebRTC.RTCPeerConnection, didChange stateChanged: WebRTC.RTCSignalingState)
+  @objc dynamic public func peerConnection(_ peerConnection: WebRTC.RTCPeerConnection, didAdd stream: WebRTC.RTCMediaStream)
+  @objc dynamic public func peerConnection(_ peerConnection: WebRTC.RTCPeerConnection, didRemove stream: WebRTC.RTCMediaStream)
+  @objc dynamic public func peerConnectionShouldNegotiate(_ peerConnection: WebRTC.RTCPeerConnection)
+  @objc dynamic public func peerConnection(_ peerConnection: WebRTC.RTCPeerConnection, didChange newState: WebRTC.RTCIceConnectionState)
+  @objc dynamic public func peerConnection(_ peerConnection: WebRTC.RTCPeerConnection, didChange newState: WebRTC.RTCIceGatheringState)
+  @objc dynamic public func peerConnection(_ peerConnection: WebRTC.RTCPeerConnection, didGenerate candidate: WebRTC.RTCIceCandidate)
+  @objc dynamic public func peerConnection(_ peerConnection: WebRTC.RTCPeerConnection, didRemove candidates: [WebRTC.RTCIceCandidate])
+  @objc dynamic public func peerConnection(_ peerConnection: WebRTC.RTCPeerConnection, didOpen dataChannel: WebRTC.RTCDataChannel)
+}
+@objc public class SignalingClient : ObjectiveC.NSObject {
+  public init(webSocket: EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider, cameraID: Swift.String, speakerID: Swift.String)
+  @objc deinit
+}
+extension EEN_Two_Way_Audio_iOS_SDK.SignalingClient : EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate {
+  public func webSocket(_ webSocket: EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider, didReceiveResponse text: Swift.String)
+  public func webSocketDidConnect(_ webSocket: EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider)
+  public func webSocketDidDisconnect(_ webSocket: EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider)
+}
+public protocol TwoWayAudioClientDelegate : AnyObject {
+  func twoWayAudioClient(_ twoWayAudioClient: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioClient, didChangeConnectionState status: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus)
+  func twoWayAudioClient(_ twoWayAudioClient: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioClient, didChangeAmplitude amplitude: Swift.Double)
+}
+public struct TwoWayAudioModel {
+  public init(webRtcUrl: Foundation.URL, sourceID: Swift.String, type: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioTypes, mediaType: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioMediaType, authKey: Swift.String)
+}
+public enum TwoWayAudioTypes : Swift.String {
+  case talkdown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TwoWayAudioMediaType : Swift.String {
+  case halfDuplex
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TwoWayAudioDisconnectReasons : Swift.Equatable {
+  case manual
+  case noPermissions
+  case error(error: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType)
+  public static func == (a: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons, b: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons) -> Swift.Bool
+}
+public enum TwoWayAudioStatus : Swift.Equatable {
+  case initial
+  case disconnected(reason: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons)
+  case connecting
+  case connected
+  public static func == (a: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus, b: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus) -> Swift.Bool
+}
+public enum TwoWayAudioErrorType : Swift.Equatable {
+  case busy
+  case timeout
+  case generic(error: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.TwoWayAudioError)
+  public struct TwoWayAudioError : Swift.Equatable {
+    public let context: Swift.String
+    public let sessionID: Swift.String
+    public let message: Swift.String
+    public static func == (a: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.TwoWayAudioError, b: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.TwoWayAudioError) -> Swift.Bool
+  }
+  public static func == (a: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType, b: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType) -> Swift.Bool
+}
+extension EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioTypes : Swift.Equatable {}
+extension EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioTypes : Swift.Hashable {}
+extension EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioTypes : Swift.RawRepresentable {}
+extension EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioMediaType : Swift.Equatable {}
+extension EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioMediaType : Swift.Hashable {}
+extension EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioMediaType : Swift.RawRepresentable {}

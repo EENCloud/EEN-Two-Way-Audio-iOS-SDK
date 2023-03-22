@@ -1,0 +1,3221 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Logger",
+        "printedName": "Logger",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK6LoggerO3logyySSFZ",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK6LoggerO3logyySSFZ",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logWarning",
+            "printedName": "logWarning(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK6LoggerO10logWarningyySSFZ",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK6LoggerO10logWarningyySSFZ",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logError",
+            "printedName": "logError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK6LoggerO8logErroryySSFZ",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK6LoggerO8logErroryySSFZ",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logError",
+            "printedName": "logError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK6LoggerO8logErroryys0I0_pFZ",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK6LoggerO8logErroryys0I0_pFZ",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK6LoggerO",
+        "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK6LoggerO",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebSocketProvider",
+        "printedName": "WebSocketProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketProviderDelegate",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP8delegateAA0ghI8Delegate_pSgvp",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP8delegateAA0ghI8Delegate_pSgvp",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketProviderDelegate",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP8delegateAA0ghI8Delegate_pSgvg",
+                "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP8delegateAA0ghI8Delegate_pSgvg",
+                "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider>",
+                "sugared_genericSig": "<Self where Self : EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketProviderDelegate",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP8delegateAA0ghI8Delegate_pSgvs",
+                "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP8delegateAA0ghI8Delegate_pSgvs",
+                "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider>",
+                "sugared_genericSig": "<Self where Self : EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP8delegateAA0ghI8Delegate_pSgvM",
+                "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP8delegateAA0ghI8Delegate_pSgvM",
+                "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider>",
+                "sugared_genericSig": "<Self where Self : EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP7connectyyF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP7connectyyF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider>",
+            "sugared_genericSig": "<Self where Self : EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP4send4datay10Foundation4DataV_tF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP4send4datay10Foundation4DataV_tF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider>",
+            "sugared_genericSig": "<Self where Self : EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP10disconnectyyF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP10disconnectyyF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider>",
+            "sugared_genericSig": "<Self where Self : EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP",
+        "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebSocketProviderDelegate",
+        "printedName": "WebSocketProviderDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "webSocketDidConnect",
+            "printedName": "webSocketDidConnect(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketProvider",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP03webH10DidConnectyyAA0ghI0_pF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP03webH10DidConnectyyAA0ghI0_pF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate>",
+            "sugared_genericSig": "<Self where Self : EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocketDidDisconnect",
+            "printedName": "webSocketDidDisconnect(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketProvider",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP03webH13DidDisconnectyyAA0ghI0_pF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP03webH13DidDisconnectyyAA0ghI0_pF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate>",
+            "sugared_genericSig": "<Self where Self : EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocket",
+            "printedName": "webSocket(_:didReceiveResponse:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketProvider",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP03webH0_18didReceiveResponseyAA0ghI0_p_SStF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP03webH0_18didReceiveResponseyAA0ghI0_p_SStF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate>",
+            "sugared_genericSig": "<Self where Self : EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP",
+        "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TwoWayAudioClient",
+        "printedName": "TwoWayAudioClient",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(with:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioClient",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioClient",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioModel",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioModel",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD5ModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioClientDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TwoWayAudioClientDelegate",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioClientDelegate",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD14ClientDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC4with8delegateAcA0bcD5ModelV_AA0bcdG8Delegate_pSgtcfc",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC4with8delegateAcA0bcD5ModelV_AA0bcdG8Delegate_pSgtcfc",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getStatus",
+            "printedName": "getStatus()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioStatus",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC9getStatusAA0bcdI0OyF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC9getStatusAA0bcdI0OyF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC7connectyyF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC7connectyyF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC10disconnectyyF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC10disconnectyyF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMuteAudio",
+            "printedName": "setMuteAudio(isMuted:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC07setMuteD07isMutedySb_tF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC07setMuteD07isMutedySb_tF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC",
+        "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SocketRocket",
+        "printedName": "SocketRocket",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebRTCSocket",
+        "printedName": "WebRTCSocket",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketProviderDelegate",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC8delegateAA0G22SocketProviderDelegate_pSgvp",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC8delegateAA0G22SocketProviderDelegate_pSgvp",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketProviderDelegate",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC8delegateAA0G22SocketProviderDelegate_pSgvg",
+                "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC8delegateAA0G22SocketProviderDelegate_pSgvg",
+                "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketProviderDelegate",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProviderDelegate",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC8delegateAA0G22SocketProviderDelegate_pSgvs",
+                "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC8delegateAA0G22SocketProviderDelegate_pSgvs",
+                "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC8delegateAA0G22SocketProviderDelegate_pSgvM",
+                "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC8delegateAA0G22SocketProviderDelegate_pSgvM",
+                "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:authKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WebRTCSocket",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebRTCSocket",
+                "usr": "c:@M@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCSocket"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC3url7authKeyAC10Foundation3URLV_SStcfc",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC3url7authKeyAC10Foundation3URLV_SStcfc",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC7connectyyF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC7connectyyF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC10disconnectyyF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC10disconnectyyF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC4send4datay10Foundation4DataV_tF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC4send4datay10Foundation4DataV_tF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WebRTCSocket",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebRTCSocket",
+                "usr": "c:@M@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCSocket"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCSocket(im)init",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketCACycfc",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocket",
+            "printedName": "webSocket(_:didReceiveMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "SocketRocket.SRWebSocket?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SRWebSocket",
+                    "printedName": "SocketRocket.SRWebSocket",
+                    "usr": "c:objc(cs)SRWebSocket"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCSocket(im)webSocket:didReceiveMessage:",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC9webSocket_17didReceiveMessageySo05SRWebJ0CSg_ypSgtF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "objc_name": "webSocket:didReceiveMessage:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocketDidOpen",
+            "printedName": "webSocketDidOpen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "SocketRocket.SRWebSocket?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SRWebSocket",
+                    "printedName": "SocketRocket.SRWebSocket",
+                    "usr": "c:objc(cs)SRWebSocket"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCSocket(im)webSocketDidOpen:",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC16webSocketDidOpenyySo05SRWebJ0CSgF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "objc_name": "webSocketDidOpen:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocket",
+            "printedName": "webSocket(_:didFailWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "SocketRocket.SRWebSocket?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SRWebSocket",
+                    "printedName": "SocketRocket.SRWebSocket",
+                    "usr": "c:objc(cs)SRWebSocket"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCSocket(im)webSocket:didFailWithError:",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC9webSocket_16didFailWithErrorySo05SRWebJ0CSg_s0N0_pSgtF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "objc_name": "webSocket:didFailWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocket",
+            "printedName": "webSocket(_:didCloseWithCode:reason:wasClean:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "SocketRocket.SRWebSocket?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SRWebSocket",
+                    "printedName": "SocketRocket.SRWebSocket",
+                    "usr": "c:objc(cs)SRWebSocket"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCSocket(im)webSocket:didCloseWithCode:reason:wasClean:",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC9webSocket_16didCloseWithCode6reason8wasCleanySo05SRWebJ0CSg_SiSSSgSbtF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "objc_name": "webSocket:didCloseWithCode:reason:wasClean:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCSocket",
+        "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCSocketC",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "WebSocketProvider",
+            "printedName": "WebSocketProvider",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebRTCClient",
+        "printedName": "WebRTCClient",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WebRTCClient",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebRTCClient",
+                "usr": "c:@M@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCClient"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCClient(im)init",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCClientCACycfc",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "peerConnection",
+            "printedName": "peerConnection(_:didChange:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCPeerConnection",
+                "printedName": "WebRTC.RTCPeerConnection",
+                "usr": "c:objc(cs)RTCPeerConnection"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCSignalingState",
+                "printedName": "WebRTC.RTCSignalingState",
+                "usr": "c:@E@RTCSignalingState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCClient(im)peerConnection:didChangeSignalingState:",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCClientC14peerConnection_9didChangeySo07RTCPeerJ0C_So17RTCSignalingStateVtF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "objc_name": "peerConnection:didChangeSignalingState:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peerConnection",
+            "printedName": "peerConnection(_:didAdd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCPeerConnection",
+                "printedName": "WebRTC.RTCPeerConnection",
+                "usr": "c:objc(cs)RTCPeerConnection"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCMediaStream",
+                "printedName": "WebRTC.RTCMediaStream",
+                "usr": "c:objc(cs)RTCMediaStream"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCClient(im)peerConnection:didAddStream:",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCClientC14peerConnection_6didAddySo07RTCPeerJ0C_So14RTCMediaStreamCtF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "objc_name": "peerConnection:didAddStream:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peerConnection",
+            "printedName": "peerConnection(_:didRemove:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCPeerConnection",
+                "printedName": "WebRTC.RTCPeerConnection",
+                "usr": "c:objc(cs)RTCPeerConnection"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCMediaStream",
+                "printedName": "WebRTC.RTCMediaStream",
+                "usr": "c:objc(cs)RTCMediaStream"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCClient(im)peerConnection:didRemoveStream:",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCClientC14peerConnection_9didRemoveySo07RTCPeerJ0C_So14RTCMediaStreamCtF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "objc_name": "peerConnection:didRemoveStream:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peerConnectionShouldNegotiate",
+            "printedName": "peerConnectionShouldNegotiate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCPeerConnection",
+                "printedName": "WebRTC.RTCPeerConnection",
+                "usr": "c:objc(cs)RTCPeerConnection"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCClient(im)peerConnectionShouldNegotiate:",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCClientC29peerConnectionShouldNegotiateyySo07RTCPeerJ0CF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "objc_name": "peerConnectionShouldNegotiate:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peerConnection",
+            "printedName": "peerConnection(_:didChange:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCPeerConnection",
+                "printedName": "WebRTC.RTCPeerConnection",
+                "usr": "c:objc(cs)RTCPeerConnection"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCIceConnectionState",
+                "printedName": "WebRTC.RTCIceConnectionState",
+                "usr": "c:@E@RTCIceConnectionState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCClient(im)peerConnection:didChangeIceConnectionState:",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCClientC14peerConnection_9didChangeySo07RTCPeerJ0C_So06RTCIceJ5StateVtF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "objc_name": "peerConnection:didChangeIceConnectionState:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peerConnection",
+            "printedName": "peerConnection(_:didChange:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCPeerConnection",
+                "printedName": "WebRTC.RTCPeerConnection",
+                "usr": "c:objc(cs)RTCPeerConnection"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCIceGatheringState",
+                "printedName": "WebRTC.RTCIceGatheringState",
+                "usr": "c:@E@RTCIceGatheringState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCClient(im)peerConnection:didChangeIceGatheringState:",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCClientC14peerConnection_9didChangeySo07RTCPeerJ0C_So20RTCIceGatheringStateVtF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "objc_name": "peerConnection:didChangeIceGatheringState:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peerConnection",
+            "printedName": "peerConnection(_:didGenerate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCPeerConnection",
+                "printedName": "WebRTC.RTCPeerConnection",
+                "usr": "c:objc(cs)RTCPeerConnection"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCIceCandidate",
+                "printedName": "WebRTC.RTCIceCandidate",
+                "usr": "c:objc(cs)RTCIceCandidate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCClient(im)peerConnection:didGenerateIceCandidate:",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCClientC14peerConnection_11didGenerateySo07RTCPeerJ0C_So15RTCIceCandidateCtF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "objc_name": "peerConnection:didGenerateIceCandidate:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peerConnection",
+            "printedName": "peerConnection(_:didRemove:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCPeerConnection",
+                "printedName": "WebRTC.RTCPeerConnection",
+                "usr": "c:objc(cs)RTCPeerConnection"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[WebRTC.RTCIceCandidate]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCIceCandidate",
+                    "printedName": "WebRTC.RTCIceCandidate",
+                    "usr": "c:objc(cs)RTCIceCandidate"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCClient(im)peerConnection:didRemoveIceCandidates:",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCClientC14peerConnection_9didRemoveySo07RTCPeerJ0C_SaySo15RTCIceCandidateCGtF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "objc_name": "peerConnection:didRemoveIceCandidates:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peerConnection",
+            "printedName": "peerConnection(_:didOpen:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCPeerConnection",
+                "printedName": "WebRTC.RTCPeerConnection",
+                "usr": "c:objc(cs)RTCPeerConnection"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCDataChannel",
+                "printedName": "WebRTC.RTCDataChannel",
+                "usr": "c:objc(cs)RTCDataChannel"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCClient(im)peerConnection:didOpenDataChannel:",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCClientC14peerConnection_7didOpenySo07RTCPeerJ0C_So14RTCDataChannelCtF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "objc_name": "peerConnection:didOpenDataChannel:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@EEN_Two_Way_Audio_iOS_SDK@objc(cs)WebRTCClient",
+        "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK12WebRTCClientC",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SignalingClient",
+        "printedName": "SignalingClient",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(webSocket:cameraID:speakerID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalingClient",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.SignalingClient",
+                "usr": "c:@M@EEN_Two_Way_Audio_iOS_SDK@objc(cs)SignalingClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketProvider",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK15SignalingClientC9webSocket8cameraID07speakerL0AcA03WebJ8Provider_p_S2Stcfc",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK15SignalingClientC9webSocket8cameraID07speakerL0AcA03WebJ8Provider_p_S2Stcfc",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalingClient",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.SignalingClient",
+                "usr": "c:@M@EEN_Two_Way_Audio_iOS_SDK@objc(cs)SignalingClient"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@EEN_Two_Way_Audio_iOS_SDK@objc(cs)SignalingClient(im)init",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK15SignalingClientCACycfc",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocket",
+            "printedName": "webSocket(_:didReceiveResponse:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketProvider",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK15SignalingClientC9webSocket_18didReceiveResponseyAA03WebJ8Provider_p_SStF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK15SignalingClientC9webSocket_18didReceiveResponseyAA03WebJ8Provider_p_SStF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocketDidConnect",
+            "printedName": "webSocketDidConnect(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketProvider",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK15SignalingClientC19webSocketDidConnectyyAA03WebJ8Provider_pF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK15SignalingClientC19webSocketDidConnectyyAA03WebJ8Provider_pF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocketDidDisconnect",
+            "printedName": "webSocketDidDisconnect(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketProvider",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.WebSocketProvider",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK17WebSocketProviderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK15SignalingClientC22webSocketDidDisconnectyyAA03WebJ8Provider_pF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK15SignalingClientC22webSocketDidDisconnectyyAA03WebJ8Provider_pF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@EEN_Two_Way_Audio_iOS_SDK@objc(cs)SignalingClient",
+        "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK15SignalingClientC",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "WebSocketProviderDelegate",
+            "printedName": "WebSocketProviderDelegate",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK25WebSocketProviderDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TwoWayAudioClientDelegate",
+        "printedName": "TwoWayAudioClientDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "twoWayAudioClient",
+            "printedName": "twoWayAudioClient(_:didChangeConnectionState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioClient",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioClient",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioStatus",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD14ClientDelegateP03twocdG0_24didChangeConnectionStateyAA0bcdG0C_AA0bcD6StatusOtF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD14ClientDelegateP03twocdG0_24didChangeConnectionStateyAA0bcdG0C_AA0bcD6StatusOtF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioClientDelegate>",
+            "sugared_genericSig": "<Self where Self : EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioClientDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "twoWayAudioClient",
+            "printedName": "twoWayAudioClient(_:didChangeAmplitude:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioClient",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioClient",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6ClientC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD14ClientDelegateP03twocdG0_18didChangeAmplitudeyAA0bcdG0C_SdtF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD14ClientDelegateP03twocdG0_18didChangeAmplitudeyAA0bcdG0C_SdtF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioClientDelegate>",
+            "sugared_genericSig": "<Self where Self : EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioClientDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD14ClientDelegateP",
+        "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD14ClientDelegateP",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TwoWayAudioModel",
+        "printedName": "TwoWayAudioModel",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(webRtcUrl:sourceID:type:mediaType:authKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioModel",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioModel",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD5ModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioTypes",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioTypes",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD5TypesO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioMediaType",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioMediaType",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9MediaTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD5ModelV9webRtcUrl8sourceID4type9mediaType7authKeyAC10Foundation3URLV_SSAA0bcD5TypesOAA0bcd5MediaO0OSStcfc",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD5ModelV9webRtcUrl8sourceID4type9mediaType7authKeyAC10Foundation3URLV_SSAA0bcD5TypesOAA0bcd5MediaO0OSStcfc",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD5ModelV",
+        "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD5ModelV",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TwoWayAudioTypes",
+        "printedName": "TwoWayAudioTypes",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "talkdown",
+            "printedName": "talkdown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioTypes.Type) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioTypes",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TwoWayAudioTypes",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioTypes",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD5TypesO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioTypes.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioTypes",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioTypes",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD5TypesO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD5TypesO8talkdownyA2CmF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD5TypesO8talkdownyA2CmF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioTypes?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TwoWayAudioTypes",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioTypes",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD5TypesO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD5TypesO8rawValueACSgSS_tcfc",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD5TypesO8rawValueACSgSS_tcfc",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD5TypesO8rawValueSSvp",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD5TypesO8rawValueSSvp",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD5TypesO8rawValueSSvg",
+                "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD5TypesO8rawValueSSvg",
+                "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD5TypesO",
+        "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD5TypesO",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TwoWayAudioMediaType",
+        "printedName": "TwoWayAudioMediaType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "halfDuplex",
+            "printedName": "halfDuplex",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioMediaType.Type) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioMediaType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TwoWayAudioMediaType",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioMediaType",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9MediaTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioMediaType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioMediaType",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioMediaType",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9MediaTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9MediaTypeO10halfDuplexyA2CmF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9MediaTypeO10halfDuplexyA2CmF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioMediaType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TwoWayAudioMediaType",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioMediaType",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9MediaTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9MediaTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9MediaTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9MediaTypeO8rawValueSSvp",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9MediaTypeO8rawValueSSvp",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9MediaTypeO8rawValueSSvg",
+                "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9MediaTypeO8rawValueSSvg",
+                "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9MediaTypeO",
+        "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9MediaTypeO",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TwoWayAudioDisconnectReasons",
+        "printedName": "TwoWayAudioDisconnectReasons",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "manual",
+            "printedName": "manual",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons.Type) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TwoWayAudioDisconnectReasons",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioDisconnectReasons",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO6manualyA2CmF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO6manualyA2CmF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+          },
+          {
+            "kind": "Var",
+            "name": "noPermissions",
+            "printedName": "noPermissions",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons.Type) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TwoWayAudioDisconnectReasons",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioDisconnectReasons",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO13noPermissionsyA2CmF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO13noPermissionsyA2CmF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons.Type) -> (EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioDisconnectReasons",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TwoWayAudioErrorType",
+                            "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType",
+                            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioDisconnectReasons",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO5erroryAcA0bcD9ErrorTypeO_tcACmF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO5erroryAcA0bcD9ErrorTypeO_tcACmF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioDisconnectReasons",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioDisconnectReasons",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO2eeoiySbAC_ACtFZ",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO",
+        "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TwoWayAudioStatus",
+        "printedName": "TwoWayAudioStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "initial",
+            "printedName": "initial",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus.Type) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TwoWayAudioStatus",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioStatus",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO7initialyA2CmF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO7initialyA2CmF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+          },
+          {
+            "kind": "Var",
+            "name": "disconnected",
+            "printedName": "disconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus.Type) -> (EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioStatus",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TwoWayAudioDisconnectReasons",
+                            "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioDisconnectReasons",
+                            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD17DisconnectReasonsO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioStatus",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO12disconnectedyAcA0bcD17DisconnectReasonsO_tcACmF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO12disconnectedyAcA0bcD17DisconnectReasonsO_tcACmF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+          },
+          {
+            "kind": "Var",
+            "name": "connecting",
+            "printedName": "connecting",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus.Type) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TwoWayAudioStatus",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioStatus",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO10connectingyA2CmF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO10connectingyA2CmF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+          },
+          {
+            "kind": "Var",
+            "name": "connected",
+            "printedName": "connected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus.Type) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TwoWayAudioStatus",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioStatus",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO9connectedyA2CmF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO9connectedyA2CmF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioStatus",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioStatus",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioStatus",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO2eeoiySbAC_ACtFZ",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO",
+        "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD6StatusO",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TwoWayAudioErrorType",
+        "printedName": "TwoWayAudioErrorType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "busy",
+            "printedName": "busy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.Type) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TwoWayAudioErrorType",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioErrorType",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO4busyyA2CmF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO4busyyA2CmF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+          },
+          {
+            "kind": "Var",
+            "name": "timeout",
+            "printedName": "timeout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.Type) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TwoWayAudioErrorType",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioErrorType",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO7timeoutyA2CmF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO7timeoutyA2CmF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+          },
+          {
+            "kind": "Var",
+            "name": "generic",
+            "printedName": "generic",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.Type) -> (EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.TwoWayAudioError) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.TwoWayAudioError) -> EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioErrorType",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.TwoWayAudioError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TwoWayAudioError",
+                            "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.TwoWayAudioError",
+                            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TwoWayAudioErrorType",
+                        "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType",
+                        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO7genericyA2C0bcdG0V_tcACmF",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO7genericyA2C0bcdG0V_tcACmF",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "TwoWayAudioError",
+            "printedName": "TwoWayAudioError",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "context",
+                "printedName": "context",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V7contextSSvp",
+                "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V7contextSSvp",
+                "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V7contextSSvg",
+                    "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V7contextSSvg",
+                    "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "sessionID",
+                "printedName": "sessionID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V9sessionIDSSvp",
+                "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V9sessionIDSSvp",
+                "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V9sessionIDSSvg",
+                    "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V9sessionIDSSvg",
+                    "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "message",
+                "printedName": "message",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V7messageSSvp",
+                "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V7messageSSvp",
+                "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V7messageSSvg",
+                    "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V7messageSSvg",
+                    "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TwoWayAudioError",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.TwoWayAudioError",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TwoWayAudioError",
+                    "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType.TwoWayAudioError",
+                    "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V2eeoiySbAE_AEtFZ",
+                "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V2eeoiySbAE_AEtFZ",
+                "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO0bcdG0V",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioErrorType",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TwoWayAudioErrorType",
+                "printedName": "EEN_Two_Way_Audio_iOS_SDK.TwoWayAudioErrorType",
+                "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO",
+        "mangledName": "$s25EEN_Two_Way_Audio_iOS_SDK0bcD9ErrorTypeO",
+        "moduleName": "EEN_Two_Way_Audio_iOS_SDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/suhaibalsaghir\/EEN\/VMS2-iOS-CoreApp\/Modules\/EEN-Two-Way-Audio-iOS-SDK\/EEN-Two-Way-Audio-iOS-SDK\/Requests\/IceCandidateRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 633,
+      "length": 15,
+      "value": "\"iceCandidates\""
+    },
+    {
+      "filePath": "\/Users\/suhaibalsaghir\/EEN\/VMS2-iOS-CoreApp\/Modules\/EEN-Two-Way-Audio-iOS-SDK\/EEN-Two-Way-Audio-iOS-SDK\/TwoWayAudioClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1033,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/suhaibalsaghir\/EEN\/VMS2-iOS-CoreApp\/Modules\/EEN-Two-Way-Audio-iOS-SDK\/EEN-Two-Way-Audio-iOS-SDK\/TwoWayAudioClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1066,
+      "length": 2,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/suhaibalsaghir\/EEN\/VMS2-iOS-CoreApp\/Modules\/EEN-Two-Way-Audio-iOS-SDK\/EEN-Two-Way-Audio-iOS-SDK\/WebRTCSocketProvider\/WebRTCSocket.swift",
+      "kind": "StringLiteral",
+      "offset": 401,
+      "length": 44,
+      "value": "\"com.eagleeye.viewer.webrtcsocket.processor\""
+    },
+    {
+      "filePath": "\/Users\/suhaibalsaghir\/EEN\/VMS2-iOS-CoreApp\/Modules\/EEN-Two-Way-Audio-iOS-SDK\/EEN-Two-Way-Audio-iOS-SDK\/WebRTCSocketProvider\/WebRTCSocket.swift",
+      "kind": "StringLiteral",
+      "offset": 162,
+      "length": 12,
+      "value": "\"EEN_Two_Way_Audio_iOS_SDK.WebRTCSocket\""
+    },
+    {
+      "filePath": "\/Users\/suhaibalsaghir\/EEN\/VMS2-iOS-CoreApp\/Modules\/EEN-Two-Way-Audio-iOS-SDK\/EEN-Two-Way-Audio-iOS-SDK\/Clients\/SignalingClient.swift",
+      "kind": "StringLiteral",
+      "offset": 645,
+      "length": 15,
+      "value": "\"EEN_Two_Way_Audio_iOS_SDK.SignalingClient\""
+    },
+    {
+      "filePath": "\/Users\/suhaibalsaghir\/EEN\/VMS2-iOS-CoreApp\/Modules\/EEN-Two-Way-Audio-iOS-SDK\/EEN-Two-Way-Audio-iOS-SDK\/Requests\/IceServersRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 446,
+      "length": 15,
+      "value": "\"getIceServers\""
+    },
+    {
+      "filePath": "\/Users\/suhaibalsaghir\/EEN\/VMS2-iOS-CoreApp\/Modules\/EEN-Two-Way-Audio-iOS-SDK\/EEN-Two-Way-Audio-iOS-SDK\/Requests\/IceServersRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 586,
+      "length": 9,
+      "value": "\"service\""
+    },
+    {
+      "filePath": "\/Users\/suhaibalsaghir\/EEN\/VMS2-iOS-CoreApp\/Modules\/EEN-Two-Way-Audio-iOS-SDK\/EEN-Two-Way-Audio-iOS-SDK\/Requests\/IceServersRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 617,
+      "length": 10,
+      "value": "\"talkdown\""
+    },
+    {
+      "filePath": "\/Users\/suhaibalsaghir\/EEN\/VMS2-iOS-CoreApp\/Modules\/EEN-Two-Way-Audio-iOS-SDK\/EEN-Two-Way-Audio-iOS-SDK\/Requests\/CreateSessionDescription.swift",
+      "kind": "StringLiteral",
+      "offset": 614,
+      "length": 15,
+      "value": "\"createSession\""
+    }
+  ]
+}
