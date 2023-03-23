@@ -1,0 +1,24 @@
+PODS:
+  - EEN-Two-Way-Audio-iOS-SDK (1.0.0)
+  - GoogleWebRTC (1.1.32000)
+  - SocketRocket (0.6.0)
+
+DEPENDENCIES:
+  - EEN-Two-Way-Audio-iOS-SDK
+  - GoogleWebRTC
+  - SocketRocket
+
+SPEC REPOS:
+  trunk:
+    - EEN-Two-Way-Audio-iOS-SDK
+    - GoogleWebRTC
+    - SocketRocket
+
+SPEC CHECKSUMS:
+  EEN-Two-Way-Audio-iOS-SDK: ca8be7a8339e7d3152d0ed7cf6f0ac6b0696ff59
+  GoogleWebRTC: 4d261187b30512efdb711d21fa961a6adf138717
+  SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+
+PODFILE CHECKSUM: 5bf8d86a6803e81c5025d6a05f6e5df73b82d3e8
+
+COCOAPODS: 1.12.0

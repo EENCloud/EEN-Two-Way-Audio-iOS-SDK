@@ -1,0 +1,9 @@
+platform :ios, '13.0'
+
+target 'TwoWayAudioDemo' do
+  use_frameworks!
+
+  pod 'EEN-Two-Way-Audio-iOS-SDK'
+  pod 'GoogleWebRTC'
+  pod 'SocketRocket'
+end
