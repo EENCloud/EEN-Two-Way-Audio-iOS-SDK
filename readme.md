@@ -37,8 +37,9 @@ Below are required for working with the 2-Way Audio SDK for iOS:
   NSMicrophoneUsageDescription
 ```
 
+:construction:
 ```sh
-  :construction: The SDK does not support bitcode since it has a dependency on GoogleWebRTC. :construction:
+  The SDK does not support bitcode since it has a dependency on GoogleWebRTC.
 ```
 
 In order to be able to use the 2-Way Audio feature the account should have the following already
@@ -47,11 +48,10 @@ In order to be able to use the 2-Way Audio feature the account should have the f
 * The account should have a camera that is associated with the speaker
 * The bridge version should be 3.8.0 or higher as well as current camera support drivers
 
+:construction:
 ```sh
-  :construction: 
   * When a speaker device is detectable by more than one bridge, all bridges must support using the speaker. They all need bridge version 3.8.0 or higher as well as current camera-support drivers. Contact Eagle Eye Support for help getting the latest version.
   * The maximum length of an audio session is 10 minutes. After 10 minutes session will be disconnected.
-  :construction:
 ```
 
 cameras API response will have "speakerId" value for all cameras with associated speakers. Below is an example response from cameras API with associated speaker:
